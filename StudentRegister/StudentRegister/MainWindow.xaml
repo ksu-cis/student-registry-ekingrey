@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
 
     <DockPanel>
-        <ListBox DockPanel.Dock="Right" Name="StudentList">
+        <ListBox DockPanel.Dock="Right" Name="StudentList" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -36,8 +36,10 @@
                 </DataTemplate>
             </ContentControl.ContentTemplate>
         </ContentControl>
-        
-        
+
+        <Button Click="AddCourse" DockPanel.Dock ="Bottom">
+            Add A Completed Course
+        </Button>
         
         
         

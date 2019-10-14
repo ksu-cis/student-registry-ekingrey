@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-namespace StudentRegister
+namespace StudentRegister 
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -33,7 +33,10 @@ namespace StudentRegister
             SelectedStudent.Content = students;
         }
 
-        
+        public void AddCourse(object sender, EventArgs args)
+        {
+            students[1].CourseComplete("test", 3, Grade.A, "Spring 2019");
+        }
 
 
 
